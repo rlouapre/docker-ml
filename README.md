@@ -6,11 +6,12 @@ From Docker Machine clone the repo:
 ```
 git clone https://github.com/rlouapre/docker-ml.git
 ```
-Change working directory:  
+Change working directory to the targetted OS centos/6 or centos/7:  
 ```
-cd docker-ml/centos/6
+cd docker-ml/$(os-version)
 ```
 Download MarkLogic rpm with curl:
+- For CentOS7 use REHL 7
 ```
 curl -k -o MarkLogic.rpm {marklogic-dowload-url}
 ```
